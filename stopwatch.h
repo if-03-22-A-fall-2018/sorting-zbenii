@@ -1,17 +1,23 @@
-/*----------------------------------------------------------
- *				HTBLA-Leonding / Klasse: <your class name here>
- * ---------------------------------------------------------
- * Exercise Number: 0
- * File:			stopwatch.h
- * Author:			Peter Bauer
+/*-----------------------------------------------------------------------------
+ *				HTBLA-Leonding / Class: <2AHIF>
+ *-----------------------------------------------------------------------------
+ * Exercise Number: #exercise_number#
+ * File:			stopwatch.cpp
+ * Author(s):		Peter Bauer, Benjamin Besic
  * Due Date:		#due#
- * ----------------------------------------------------------
+ *-----------------------------------------------------------------------------
  * Description:
- * A stop watch to measure cpu time
- * ----------------------------------------------------------
- */
+ * Sort Algorythms with a added stopwatch
+ *-----------------------------------------------------------------------------
+*/
 #ifndef ___STOPWATCH_H
 #define ___STOPWATCH_H
+
+void 	start_stopwatch ();
+
+void 	stop_stopwatch ();
+
+float 	elapsed_time ();
 
 /**
 *** @file stopwatch.h
