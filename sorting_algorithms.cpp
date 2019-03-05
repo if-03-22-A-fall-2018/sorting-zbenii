@@ -16,7 +16,7 @@
 void 	init_random (int *array, unsigned long length){
   for(unsigned int i=0;i<length;i++)
   {
-    array[i]=rand() % 100;
+    array[i]=rand()%100;
   }
 }
 
