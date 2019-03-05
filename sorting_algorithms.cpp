@@ -16,6 +16,7 @@
 void 	init_random (int *array, unsigned long length){
   for(unsigned int i=0;i<length;i++)
   {
+    //random number from 0 to 99
     array[i]=rand()%100;
   }
 }

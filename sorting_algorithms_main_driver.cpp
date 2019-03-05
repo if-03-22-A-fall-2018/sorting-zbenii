@@ -38,11 +38,13 @@ float getTime(int* array,unsigned long length,int number)
 {
   init_random(array,length);
 
+  //if number 0 then bubble sort
   if(number==0)
   {
     start_stopwatch();
     bubble_sort(array,length);
   }
+  //else insertion sort
   else
   {
     start_stopwatch();
@@ -54,6 +56,8 @@ float getTime(int* array,unsigned long length,int number)
 
 int main(int argc, char const *argv[]) {
   int array[HUGE];
+
+  //getting times for bubble sort
   float bubbleT,bubbleVS,bubbleS,bubbleM,bubbleL,bubbleVL,bubbleH;
   bubbleT=getTime(array,TINY,0);
   bubbleVS=getTime(array,VERY_SMALL,0);
@@ -63,6 +67,7 @@ int main(int argc, char const *argv[]) {
   bubbleVL=getTime(array,VERY_LARGE,0);
   bubbleH=getTime(array,HUGE,0);
 
+  //getting times for insertion sort
   float insertT,insertVS,insertS,insertM,insertL,insertVL,insertH;
   insertT=getTime(array,TINY,1);
   insertVS=getTime(array,VERY_SMALL,1);
@@ -72,6 +77,7 @@ int main(int argc, char const *argv[]) {
   insertVL=getTime(array,VERY_LARGE,1);
   insertH=getTime(array,HUGE,1);
 
+  //printing out the times
   printf("Algorithm     tiny           v_small           small           middle           large           v_large           huge \n");
   printf("Bubble        %f       %f          %f        %f         %f        %f          %f   \n",bubbleT,bubbleVS,bubbleS,bubbleM,bubbleL,bubbleVL,bubbleH);
   printf("Insertion     %f       %f          %f        %f         %f        %f          %f   \n",insertT,insertVS,insertS,insertM,insertL,insertVL,insertH);
